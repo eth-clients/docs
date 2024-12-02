@@ -1,0 +1,56 @@
+site_name: Ethereum client team docs
+site_description: A collection of docs from Ethereum client teams
+site_url: https://eth-clients.github.io/docs/
+repo_url: https://github.com/eth-clients/docs
+repo_name: docs
+edit_uri: edit/main/docs/
+copyright: "Copyright: 2024, Ethereum Community"
+
+
+
+
+theme:
+  name: material
+  logo: img/Ethereum-logo-600px.png
+  favicon: img/ETH-logo-icon.svg
+  language: en
+  features:
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 4
+ 
+
+extra:
+  version:
+    provider: mike
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.7.1.min.js
+  - https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js
+  - https://cdn.datatables.net/2.1.7/js/dataTables.min.js
+  - https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js
+  - https://cdn.datatables.net/buttons/3.1.2/js/buttons.dataTables.js
+  - https://cdn.datatables.net/buttons/3.1.2/js/buttons.colVis.min.js
+  - javascripts/site.js    
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css
+  - https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.min.css
+  - https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css
+  - stylesheets/custom.css
